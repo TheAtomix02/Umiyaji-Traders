@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umiyaji Traders | Modern Luxury</title>
+    <meta name="description" content="Redefining modern luxury through silence, structure, and shadow." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                black: '#050505',      /* Pitch Black */
+                offblack: '#0F0F0F',   /* Soft Black */
+                white: '#F5F5F5',      /* Off White */
+                gold: '#C8A97E',       /* Muted Champagne Gold */
+                gray: '#888888',       /* Neutral Gray */
+                sand: '#E5E5E5',       /* Sand */
+                ivory: '#FFFFF0',      /* Ivory */
+                cream: '#F5F5DC',      /* Cream */
+                charcoal: '#36454F',   /* Charcoal */
+                antique: '#8B4513'     /* Antique Gold Base */
+              }
+            },
+            fontFamily: {
+              serif: ['"Italiana"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+              display: ['"Italiana"', 'serif'],
+            },
+            transitionTimingFunction: {
+              'luxury': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+              'cinema': 'cubic-bezier(0.19, 1, 0.22, 1)',
+            },
+            animation: {
+              'sheen': 'sheen 1s ease-in-out infinite',
+            },
+            keyframes: {
+              sheen: {
+                '0%, 100%': { transform: 'translateX(-100%)' },
+                '50%': { transform: 'translateX(100%)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #F5F5F5;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Hide scrollbar for cleaner look */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      .text-balance {
+        text-wrap: balance;
+      }
+      /* Utility for hiding cursor on desktop */
+      @media (min-width: 768px) {
+        body {
+          cursor: none;
+        }
+        a, button, input, select, textarea {
+          cursor: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+</html>
