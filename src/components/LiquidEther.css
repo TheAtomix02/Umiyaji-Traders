@@ -1,0 +1,8 @@
+.liquid-ether-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* Allow vertical scrolling (pan-y) so the canvas doesn't trap the user on mobile */
+  touch-action: pan-y; 
+}
